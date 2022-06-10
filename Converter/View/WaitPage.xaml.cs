@@ -12,19 +12,17 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
-// Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=234238
+using Converter.ViewModel;
 
 namespace Converter.View
 {
-    /// <summary>
-    /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
-    /// </summary>
     public sealed partial class WaitPage : Page
     {
         public WaitPage()
         {
             this.InitializeComponent();
+            var jsonRequester = new JsonRequesterViewModel();
+            jsonRequester.Download();
         }
     }
 }
