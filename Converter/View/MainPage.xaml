@@ -86,7 +86,6 @@
                                 TextWrapping="WrapWholeWords"
                                 HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}">
                             </TextBlock>
- 
                         </StackPanel>
                     </ControlTemplate>
                 </Setter.Value>
@@ -138,7 +137,8 @@
                     Source="../Assets/arrow1.png"  
                     Grid.Column="1" Grid.Row="1"
                     HorizontalAlignment="Center"
-                    Stretch="Fill"/>
+                    Stretch="Fill"
+                    MaxWidth="150"/>
 
                 <TextBlock 
                     Grid.Column="0" Grid.Row="2"

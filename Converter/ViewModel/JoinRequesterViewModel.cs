@@ -36,7 +36,6 @@ namespace Converter.ViewModel
                 var result = await response.Content.ReadAsStringAsync();
                 JsonObj obj = JsonSerializer.Deserialize<JsonObj>(result);
                 Valutes = new ObservableCollection<Valute>(obj.Valute.Values);
-
             }
         }
     }
