@@ -16,14 +16,16 @@
         HorizontalAlignment="Stretch"
         Background="White">
         <Border Background="LightGray"
-                    Padding="0 0 0 5"
-                    BorderBrush="Gray"
-                    BorderThickness="1">
+                Height="50"
+                Padding="0 0 0 5"
+                BorderBrush="Gray"
+                BorderThickness="1">
             <TextBlock 
-                    FontSize="20"
-                    Text="Выбор валют" 
-                    TextAlignment="Center"
-                    Foreground="Black"/>
+                FontSize="20"
+                Text="Выбор валют" 
+                TextAlignment="Center"
+                VerticalAlignment="Center"
+                Foreground="Black"/>
         </Border>
        
         <ListView ItemsSource="{Binding Valutes}"
