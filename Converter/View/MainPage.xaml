@@ -100,11 +100,12 @@
         Background="White">
 
             <Border Background="LightGray"
-                Padding="0 0 0 5">
+                    Padding="0 0 0 5">
                 <TextBlock 
                     FontSize="20"
                     Text="Конвертер валют" 
                     TextAlignment="Center"
+                    HorizontalAlignment="Center"
                     Foreground="Black"/>
             </Border>
 
@@ -121,8 +122,9 @@
                     <RowDefinition Height="20"/>
                     <RowDefinition />
                 </Grid.RowDefinitions>
+                
+                
                 <TextBox 
-                    
                     Style="{StaticResource defult}"
                     Grid.Column="0" Grid.Row="0"
                     Margin="0 10 0 10"
