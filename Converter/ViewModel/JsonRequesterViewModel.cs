@@ -13,11 +13,11 @@ using Windows.UI.Xaml.Controls;
 
 namespace Converter.ViewModel
 {
-    public class JoinRequesterViewModel
+    public class JsonRequesterViewModel
     {
         public ObservableCollection<Valute> Valutes { get; set; }
 
-        public JoinRequesterViewModel()
+        public JsonRequesterViewModel()
         {
             Download();
         }
